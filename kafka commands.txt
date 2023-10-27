@@ -1,0 +1,16 @@
+Commands:
+
+creating kafka topic:
+bin/kafka-topics.sh --create --topic project3  --bootstrap-server localhost:9092
+
+starting zookeeper: 
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+Starting a kafka server: 
+bin/kafka-server-start.sh config/server.properties
+
+running producer: 
+python3 p1.py
+
+running consumer: 
+python3 c1.py
